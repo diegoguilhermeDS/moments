@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+  --brand-400: #210440;
+  --brand-300: #ffba00;
+  --brand-350: #dec129;
+  --brand-200: #e5958e;
+  --brand-100: #fdb095;
+
+  --white: #fff;
+  --black: #000;
+
+  --text-color-default: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /*definir font family e color default*/
+}
+
+body {
+  background-color: var(--brand-400);
+  color: var(--text-color-default);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color-default);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100%;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.container-main {
+  margin-top: 1em;
+}
+
+form {
+  width: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 1.25rem .5rem;
+  border-radius: .25rem;
+  background-color: var(--brand-100);
+  box-shadow: 0 0 15px var(--brand-100);
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: none;
+}
+
+fieldset label {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+fieldset input,
+fieldset textarea {
+  padding: 0.6em;
+  color: #777;
+  font-size: 0.8em;
+
+  outline: none;
+  resize: none;
+  border: 2px solid transparent;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  width: 100px;
+  height: 40px;
+  background-color: #efefef;
+  border: .125rem solid transparent;
+  border-radius: 8px;
+  padding: 0 1em;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+input[type="submit"]:hover {
+  background-color: #746c6c;
+  border-color: var(--brand-350);
+  color: var(--brand-350);
+}
+
+
+@media (min-width: 1536px) {
+  .container-main {
+    min-height: 63vh;
+  }
+}
