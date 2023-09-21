@@ -40,7 +40,7 @@ export class MomentFormComponent {
     if (this.momentForm.invalid) {
       return;
     }
-
+    
     this.onSubmit.emit(this.momentForm.value)
   }
 }

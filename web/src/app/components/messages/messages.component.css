@@ -1,0 +1,35 @@
+.message {
+    position: fixed;
+    top: 2.5rem;
+    right: 2.5rem;
+    z-index: 100;
+    width: 18.75rem;
+    min-height: 5rem;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: .5rem;
+    color: #666666;
+    padding: .5rem;
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    color: #140404;
+    font-size: 12px;
+}
+
+.clear {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    background: transparent;
+    border: none;
+    font-weight: 600;
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.clear:hover {
+    transform: scale(1.1);
+}
