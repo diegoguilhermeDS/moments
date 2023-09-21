@@ -22,7 +22,6 @@ export class NewMomentComponent {
       data.append("image", moment.image)
     }
 
-
     await this.momentService.createMoment(data).subscribe()
 
   }
